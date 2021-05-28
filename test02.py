@@ -51,7 +51,7 @@ def LowerCount(b,y1,y2):
     for i in a.values:
         if i <= b:  # 可依需要修改条件
             num += 1
-    percent = num / len(a)
+    percent = num / len(a)*100
     mserror = MSE(y1, y2)
     return percent,mserror
 
@@ -64,6 +64,6 @@ y_predd = load_model('depth.model',df_feature)
 Lans = LowerCount(10,df_length_label,y_predl)
 Wans = LowerCount(15,df_width_label,y_predw)
 Dans = LowerCount(1.11,df_depth_label,y_predd)
-
-
-print('ok')
+print("%.1f"%Lans[0],"%.1f"%Lans[1],
+      "%.1f"%Wans[0],"%.1f"%Wans[1],
+      "%.1f"%Dans[0],"%.1f"%Dans[1])
