@@ -21,6 +21,7 @@ df_feature = df.loc[:,['speed', 'magnet', 'liftoff', 'idod',
        'axial_L_special',
        'axial_L_gu_loca_gap', 'axial_L_special_loca_gap',
        'axial_L_inflect_loca_gap', 'axial_L_fengfeng_loca_gap',
+
        'axial_L_gu_ave', 'axial_L_fenggu_left', 'axial_L_fenggu_right',
        'axial_L_area_r1', 'axial_L_area_r2', 'axial_L_area_r3',
        'axial_L_energy_r1', 'axial_L_energy_r2', 'axial_L_energy_r3',
